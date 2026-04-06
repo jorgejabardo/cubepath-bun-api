@@ -11,7 +11,7 @@ if (!apiKey) {
 }
 
 export const config = {
-  port: Number(process.env.PORT) || 3001,
+  port: Number(process.env.PORT) || 3000,
   openRouter: {
     apiKey: apiKey ?? "",
   },
