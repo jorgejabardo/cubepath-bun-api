@@ -4,6 +4,7 @@ import { handleChatPost } from "./routes/chat";
 console.log("[src/index] Iniciando servidor...");
 
 Bun.serve({
+  hostname: "0.0.0.0",
   port: config.port,
   fetch(req) {
     const url = new URL(req.url);
